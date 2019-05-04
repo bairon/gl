@@ -1,0 +1,25 @@
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace=""
+    elementFormDefault="qualified">
+    <xs:element name="Response">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Horses" type="horses" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Winner" type="xs:int" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="Money" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+	        <xs:attribute name="Error" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+	<xs:complexType name="horses">
+        <xs:sequence>
+            <xs:element name="Horse" type="horse" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="horse">
+	    <xs:attribute name="Name" type="xs:string" use="required"/>
+	    <xs:attribute name="Factor" type="xs:double" use="required"/>
+	    <xs:attribute name="Win" type="xs:long" use="required"/>
+    </xs:complexType>
+</xs:schema>

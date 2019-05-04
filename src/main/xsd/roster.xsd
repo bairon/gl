@@ -1,0 +1,82 @@
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace=""
+    elementFormDefault="qualified">
+    <xs:element name="roster">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Armors" type="armors" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="Gladiator" type="gladiator" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+	<xs:complexType name="armors">
+        <xs:sequence>
+            <xs:element name="Armor" type="armor" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+<!--	<Gladiator ID="94617">
+		<Name>Carlino</Name>
+		<Level>15</Level>
+		<Exp>8319.99</Exp>
+		<TypeID>4</TypeID>
+		<Age>22</Age>
+		<Stamina>100</Stamina>
+		<Morale>7</Morale>
+		<Acc>10</Acc>
+		<Str>17</Str>
+		<Dex>11</Dex>
+		<Vit>11</Vit>
+		<Hits>110</Hits>
+		<FullHits>110</FullHits>
+	</Gladiator>
+ -->
+    <xs:complexType name="gladiator">
+        <xs:sequence>
+	        <xs:element name="Name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Level" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Exp" type="xs:double" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="TypeID" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Age" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Stamina" type="xs:double" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Morale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Acc" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Str" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Dex" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Vit" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Hits" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="FullHits" type="xs:long" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+	    <xs:attribute name="ID" type="xs:long" use="required"/>
+    </xs:complexType>
+	<!--		<Armor ID="2719543">
+				<Level>2</Level>
+				<TypeID>4</TypeID>
+				<StatusID>1</StatusID>
+				<Durability>40</Durability>
+				<MaxDurability>40</MaxDurability>
+				<Damage>10</Damage>
+				<Head>0</Head>
+				<Body>5</Body>
+				<Arms>25</Arms>
+				<Legs>25</Legs>
+				<Morale>0</Morale>
+			</Armor>
+	 -->
+    <xs:complexType name="armor">
+        <xs:sequence>
+            <xs:element name="Level" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="TypeID" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="StatusID" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Durability" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="MaxDurability" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Damage" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Head" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Body" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Arms" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Legs" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="Morale" type="xs:long" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+	    <xs:attribute name="ID" type="xs:long" use="required"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,559 @@
+
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+        'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+
+<head>
+
+    <meta name="Keywords" content="игры,флеш игры,интернет игра, флешигры,флэш игры,Бесплатные игры,компьютерные игры,оружие,колизей,он-лайн игры,Форум,игры бесплатно,игры онлайн,бесплатные онлайн игры,логические игры,древний рим,онлайн флэш игры,игры драки,аукцион,консул,бесплатные компьютерные игры,флеш-игры,бесплатные флеш игры,лучшие игры,бесплатные флэш игры,стратегии,онлайн игра nocd,тренер,бесплатные flash игры nocd,лекарь,лавка,претор,лучник,массажист,торговец,сражение, скриншоты игры,квестор,дуэль,жрец,бой,цензор,эдил"/>
+    <meta name="Description" content="Увлекательная онлайн игра в мире Древнего Рима. Красочные 2d бои, заезды на ипподроме, борьба гильдий за провинции, политика в сенате  - присоединяйся!"/>
+
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <link rel='stylesheet' type='text/css' href='/css.css' media='screen' />
+
+    <script type="text/javascript" src="/js/functions.js?nc=31072014"></script>
+    <script type="text/javascript" src="/cls/js/functions.js?nc=31072014"></script>
+    <script type="text/javascript" src="/cls/js/jquery.min.js?nc=2"></script>
+    <script type="text/javascript" src="/cls/js/jquery.bgiframe.min.js"></script>
+    <script type="text/javascript" src="/cls/js/jquery-ui.custom.min.js"></script>
+    <script type="text/javascript" src="/cls/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/cls/js/swfobject.js"></script>
+    <title>Игры онлайн - Гладиаторы, игры бесплатно, бесплатные игры, браузерные игры, онлайн игра</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=charset=utf-8" />
+
+</head>
+
+
+<script src="/cls/ajax/JsHttpRequest.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+    var digital = new Date( 'Jun, 25 2016 02:45:15');
+    setTimeout("clock()", 1000);
+</script>
+
+<body class='inner'>
+
+<div id='page-wrapper'  >
+<div id='page' >
+
+
+
+<!-- header -->
+
+
+<div id='header'>
+    <div class='shadow-left'>
+        <div class='border-left'><div class='border-right'>
+            <div class='content'>
+                <ul class='left'><li class='first'><a href="/" >Главная</a></li><li><a href="/users/20040933/" >Мой профиль</a></li><li><a href="/xml/main/rules.php" >Правила</a></li></ul><ul class='right'><li class='first'><a href="http://forum.gladiators.ru"  target="_blank">Форум</a></li><li><a href="/xml/residence/tickets.php" >Поддержка</a></li><li><a href="/xml/main/logout.php?do=logout" >Выход</a></li></ul>
+
+
+
+
+
+                <div class='clearer'></div>
+            </div>
+        </div></div>
+    </div>
+
+    <div class='tree-left'></div>
+    <div class='tree-right'></div>
+    <div class='tree-right-piece'></div>
+</div>
+<!-- /header -->
+
+<!-- game menu -->
+<div id='game-menu-wrapper'><div id='game-menu'>
+    <div class='top'>
+
+        <div class='chains'></div>
+
+        <ul class='menu'>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-residence.gif' alt='Резиденция' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/index.php'>Мой кабинет</a></li><li><a href='/xml/residence/buildings.php'>Мои постройки</a></li><li><a href='/xml/residence/treasury.php'>Финансовый отчет</a></li><li><a href='/xml/residence/level.php'>Повышение уровня</a></li><li><a href='/xml/residence/info.php?act=profile'>Личные данные</a></li><li><a href='/xml/residence/info.php?act=alltournaments'>Зал трофеев</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/index.php'>Резиденция</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-gladiators.gif' alt='Отряд' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/gladiators/'>Мои гладиаторы</a></li><li><a href='/xml/gladiators/train.php'>Тренировка</a></li><li><a href='/xml/gladiators/recovery.php'>Восстановление</a></li><li><a href='/xml/gladiators/armor.php'>Вооружение</a></li><li><a href='/xml/gladiators/slot.php'>Аренда слота</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/xml/gladiators/'>Отряд</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-city.gif' alt='Город' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/city/slaves.php'>Рынок рабов</a></li><li><a href='/xml/city/tavern.php'>Таверна</a></li><li><a href='/xml/city/usurer.php'>Ростовщик</a></li><li><a href='/xml/city/market.php'>Аукцион</a></li><li><a href='/xml/city/market.php?act=rents'>Рынок аренды</a></li><li><a href='/xml/city/hippo.php'>Ипподром</a></li><li><a href='/xml/city/draft.php'>Рудиариум</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/xml/city/slaves.php'>Город</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-arena.gif' alt='Арена' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/arena/arena.php'>Тренировка боёв</a></li><li><a href='/xml/arena/tournaments.php'>Турниры</a></li><li><a href='/xml/arena/champ.php'>Чемпионаты</a></li><li><a href='/xml/wc/index.php'>Античные Игры</a></li><li><a href='/xml/arena/archive.php'>Архив боёв</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/xml/arena/arena.php'>Арена</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-bonus.gif' alt='Платные опции' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/bonus/pay.php'>Купить бонусы</a></li><li><a href='/xml/bonus/bonus.php'>На что потратить?</a></li><li><a href='/xml/bonus/senate.php'>Должности в сенате</a></li><li><a href='/xml/residence/treasury.php?act=bonus_history'>История операций</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/xml/bonus/pay.php'>Платные опции</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-politics.gif' alt='Политика' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/politics/senate.php'>Сенат</a></li><li><a href='/xml/politics/guilds.php'>Гильдии</a></li><li><a href='/xml/politics/map.php'>Карта</a></li><li><a href='/xml/residence/glory.php'>Зал славы</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/index.php'>Политика</a></span>
+            </li>
+            <li  onmouseover='menu_highlight_2(this)' onmouseout='menu_lostfocus_2(this)'>
+                <img src='/images/icons/menu-misc.gif' alt='Разное' />
+
+
+
+                <div class='sub-menu'>
+                    <div class='m-top'><div class='m-bottom'>
+                        <ul>
+
+                            <li><a href='/xml/misc/rating.php'>Рейтинг</a></li><li><a href='/xml/misc/types.php'>Типы гладиаторов</a></li><li><a href='/xml/misc/search.php'>Поиск игрока</a></li><li><a href='/xml/main/competition.php'>Акции и конкурсы</a></li>						</ul>
+                    </div></div>
+                </div>
+
+
+
+                <span><a href='/xml/misc/types.php'>Разное</a></span>
+            </li>
+        </ul>
+
+        <a href='/'><img src="/images/ut_doodles/icon/1.jpg" alt='Гладиаторы' class='logo' /></a>
+        <div class='leaves-4'></div>
+
+    </div>
+</div></div>
+<script>
+    $('.sub-menu').bgiframe();
+</script>
+<!-- /game menu -->
+
+
+<link rel="stylesheet" href="/js/modal-message.css" type="text/css">
+    <script type="text/javascript" src="/js/modal-message.js"></script>
+    <script type="text/javascript">
+        messageObj = new DHTML_modalMessage();
+        messageObj.setShadowOffset(5);
+
+        function displayStaticMessage(messageContent,cssClass, is_resize)
+        {
+            messageObj.setHtmlContent(messageContent);
+            messageObj.setSize(250,150);
+            messageObj.setCssClassMessageBox(cssClass);
+            messageObj.setSource(false);
+            messageObj.setShadowDivVisible(true);
+            messageObj.display();
+            if (!is_resize)
+                return;
+
+            document.getElementById('special_id_2_modal_msg').id = "";
+            var modalMessage;
+            if (modalMessage = document.getElementById('special_id_2_modal_msg'))
+            {
+                modalMessage.style.overflow = "auto";
+                var height = (window.innerHeight ? window.innerHeight : (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.offsetHeight));
+                if (modalMessage.offsetHeight > height - 150)
+                    modalMessage.style.height = (height - 150) + 'px';
+            }
+        }
+
+        function closeMessage()
+        {
+            messageObj.close();
+        }
+
+        function clearMessages()
+        {
+            JsHttpRequest.query('/ajax_functions.php',
+                    {
+                        'function': 'clearmessages'
+                    },
+                    function(result, answer)
+                    {
+
+                    },true);
+        }
+    </script>
+
+
+    <div id="awayDiv" style="display: none;"></div>
+
+    <script>
+        function showModalAway(url)
+        {
+            var regexp = /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*):?([^:@]*))?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/g;
+            regexp.lastIndex = 0;
+            var parseURL = regexp.exec(url);
+            var domain = parseURL[6];
+            var localTitle = 'gladiators';
+            var localDomain = 's2.gladiators.ru';
+            var title = 'Переход по внешней ссылке';
+            var text = "<table cellpadding=0 cellspacing=0 border=0 width='650'><tr><td style='height:6px;background:transparent url(http://gladiators.ru/images/message-border-tb.gif) repeat-x scroll 6px top' colspan=3></td></tr><tr><td style='width:6px;background:transparent url(http://gladiators.ru/images/message-border-lr.gif) repeat-y'>&nbsp;&nbsp;</td><td style='padding:25px;background:transparent url(http://gladiators.ru/images/fone-message.gif) repeat scroll left top'><p style='width:550px'><span style='font-size: 18px;'>";
+            text += localTitle+" | "+title+ "</span><br><br>";
+            text += " Вы покидаете сайт "+localDomain+" по внешней ссылке <b>"+url+"</b>, предоставленной одним из участников. <br/>Администрация "+localTitle+" не несет ответственности за содержимое сайта <b>"+domain+"</b> и настоятельно рекомендует <b>не указывать</b> никаких своих данных, имеющих отношение к "+localTitle+" (особенно <b>e-mail</b>, <b>пароль</b> и <b>cookies</b>), на сторонних сайтах. <br/><br/> Кроме того, сайт <b>"+domain+"</b> может содержать вирусы, трояны и другие вредоносные программы, опасные для Вашего компьютера. <br/> Если у Вас нет серьезных оснований доверять этому сайту, лучше всего на него не переходить, даже если Вы якобы получили эту ссылку от одного из Ваших друзей. <br/><br/> Если Вы еще не передумали, нажмите на <a href='"+url+"' id='page'>"+url+"</a>. <br/> Если Вы не хотите рисковать безопасностью Вашего аккаунта и компьютера, нажмите <a href='javascript:closeMessage()'>отмена</a>.";
+            text += "</p></td><td style='width:6px;background:transparent url(http://gladiators.ru/images/message-border-lr.gif) repeat-y'>&nbsp;</td></tr><tr><td style='height:6px;background:transparent url(http://gladiators.ru/images/message-border-tb.gif) repeat-x scroll 6px top' colspan=3>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></table>";
+
+            $('#awayDiv').html(text);
+            displayStaticMessage($('#awayDiv').html(),false, false);
+        }
+    </script>
+
+
+    <!-- content -->
+    <div id='content'>
+        <div class='shadow-left'><div class='shadow-right'>
+            <div class='column-top'>
+                <div class='column-left'>
+
+                    <div class='leaves-1'></div>
+                    <div class='leaves-2'></div>
+                    <div class='leaves-3'></div>
+                    <div class='column-right'>
+                        <div class='footer-pad'>
+
+
+
+
+                            <!-- status bar -->
+                            <div id='status'>
+                                <div class='shadow-top'><div class='shadow-bottom'>
+                                    <div class='content'><div class='top'><div class='bottom'>
+
+
+                                        <span><a href='/'><img src='/images/icons/icon-time.gif' title='Время на сервере' align=abmiddle/></a><a href='/'><em id=clock>02:45</em></a></span>
+
+				<span><a href='/xml/residence/info.php' ><img src='/images/icons/icon-profile.gif' title='Профиль' border=0/></a>
+<a href=/guilds/10><img src=/images/gd_guilds/small/10.jpg></a> <a href=/users/20040933 title='Профиль'>alsa [17]</a>				</span>
+
+					<span><a href='/xml/residence/level.php' title='Опыт набранный и необходимый для следующего уровня'><img src='/images/icons/icon-star.gif' title='Опыт набранный и необходимый для следующего уровня' border=0 /></a>
+	<a href=/xml/residence/level.php title='Опыт набранный и необходимый для следующего уровня'>3181402 (4096000)</a>					</span>
+                                    <span><a href='/xml/misc/rating.php?act=glory' title='Уровень славы'><img src='/images/icons/icon-honour.gif' title='Уровень славы' border=0 /></a> <a href='/xml/misc/rating.php?act=glory' title='Уровень славы'>1.793</a> </span>
+						<span><a href='/xml/bonus/pay.php'><img src='/images/icons/icon-status.gif' title='Бонусы (обычные+сенаторские)' border=0 /></a>
+	<a href='/xml/bonus/pay.php' title='Бонусы (обычные+сенаторские)'>0.7+1</a></span>
+                                    <span><a href='/xml/residence/treasury.php'><img src='/images/icons/icon-money.gif' title='Финансы' border=0 /></a> <a href='/xml/residence/treasury.php' id='MoneySumBlock' title='Финансы'>601.064</a></span>
+
+                                    <span><a href='/xml/gladiators/'><img src='/images/icons/icon-gladiators.gif' title='Гладиаторов в отряде/число слотов для найма' border=0 /></a> <a href='/xml/gladiators/' title='Гладиаторов в отряде/число слотов для найма'>24/30</a></span>
+				<span><a href='/xml/residence/mail.php'><img src='/images/icons/icon-mail2.gif' title='Почта'  border=0/></a> <a href='/xml/residence/mail.php' title='Почта' class='complex'>
+                    7</a></span>
+
+
+                                    <span><a href='/xml/arena/tournaments.php?&enableChat=1'><img src='/images/icons/icon-chat.gif' title='Чат'  border=0/></a> <a href='/xml/arena/tournaments.php?&enableChat=1'  class='complex' title='Чат'>Чат [<em id=chatersCount>9</em>]</a></span>
+
+                                </div></div></div>
+                        </div></div>
+                </div>
+                <!-- /status bar -->
+                <table id="tableMain" border="0" width=100% height=100% cellspacing=0 cellpadding=0><tr><td valign=top>
+                <div class='left-panel'>		<!-- script -->
+                <div class='script3 lfloat'>
+                <div class='bottom'><div class='top'>
+                <center><b>[Открытые]</b>&nbsp;&nbsp;<a href="tournaments.php?typeid=9&act=active">[Стартовавшие]</a>&nbsp;&nbsp;<a href="tournaments.php?typeid=9&act=future">[Будущие]</a>&nbsp;&nbsp;<a href="tournaments.php?typeid=9&act=archive">[Завершенные]</a>&nbsp;&nbsp;</center><br><h3>Императорские турниры</h3><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3735824><img src="/images/ft_tournament_types/small/24596.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3735824">Императорские турниры: Игры Траяна-CCCLXVII</a> // 25.06.2016 02:45 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Турнир для гладиаторов 45 уровня. Основные типы.</i><br><br><br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 21 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 0 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3735824&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3735824">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3734493><img src="/images/ft_tournament_types/small/24197.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3734493">Императорские турниры: Турнир Медузы-MMCCCXCIII</a> // 25.06.2016 02:49 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 25</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 15000 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 21 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 1 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3734493&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3734493">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3735847><img src="/images/ft_tournament_types/small/1287.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3735847">Императорские турниры: Турнир Вулкана-MMDLXXI</a> // 25.06.2016 02:50 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 30</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 18000 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 21 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 0 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3735847&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3735847">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3735749><img src="/images/ft_tournament_types/small/13102.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3735749">Императорские турниры: Игры Аквилона-MMMDCLXII</a> // 25.06.2016 02:50 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 30</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 18000 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 39 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 1 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3735749&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3735749">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3734183><img src="/images/ft_tournament_types/small/15914.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3734183">Императорские турниры: Турнир Эллисы-MMMXXX</a> // 25.06.2016 02:50 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 35</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 18100 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 25 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 0 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3734183&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3734183">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3734248><img src="/images/ft_tournament_types/small/14416.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3734248">Императорские турниры: Игры Фидес-DCCLXXV</a> // 25.06.2016 02:50 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 20</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 12000 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 30 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 1 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3734248&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3734248">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3733902><img src="/images/ft_tournament_types/small/497.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3733902">Императорские турниры: Игры Сильвана-CMXLIV</a> // 25.06.2016 02:50 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Турнир с возрастанием уровня от 15 до 20<br /></i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 11000 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 45 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 1 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3733902&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3733902">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3735413><img src="/images/ft_tournament_types/small/24011.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3735413">Императорские турниры: Игры Аполлона-MMMCCCXXIII</a> // 25.06.2016 02:55 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 15</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 10500 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 31 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 2 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3735413&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3735413">подробнее..</a></div></td></tr></table><br><table border="0" width="100%" bordercolor="#918567" bgcolor="#918567" cellpadding="4" cellspacing="1"><tr bgcolor="#FAEECF"><td rowspan="3" bgcolor=#E7DBBB valign=top><a href=/xml/arena/tournaments.php?id=3735860><img src="/images/ft_tournament_types/small/8740.jpg" border=0></a></td><td height="10px" bgcolor="#E7DBBB"><b><a href="tournaments.php?id=3735860">Императорские турниры: Турнир Эскулапа-MDLXXI</a> // 25.06.2016 03:00 </td><tr bgcolor="#FAEECF"><td valign="top" height="50px" width="100%"><i>Уровень гладиаторов до 25</i><br><br><img src=/images/icons/finance.gif width="17" height="17" align="absmiddle"> <b>Призовой фонд:</b> 15600 денариев<br><img src=/images/icons/time.gif width="15" height="15" align="absmiddle"> <b>Длительность:</b> до 21 минут<br><img src=/images/types/2.gif width="15" height="15" align="absmiddle"> <b>Опыт:</b> в 2.5 раза выше<br><img src=/images/icons/profile.gif width="15" height="15" align="absmiddle"> <b>Участников:</b> 0 из 8</td></tr><tr bgcolor="#FAEECF"><td height="10px" bgcolor="#E7DBBB"><center><b></b></center><a href="tournaments.php?id=3735860&act=join&step=1" ><b>[присоединиться]</b></a><div align="right"><a href="tournaments.php?id=3735860">подробнее..</a></div></td></tr></table><br><table border=0 cellspacing=0 cellpadding=2 width=100%></table><br><br>
+            </div></div>
+        </div>
+
+
+    </div>
+</td>
+<td valign=top>
+
+    <!-- right panel -->
+    <div class='right-panel' style="width: 228px;">
+
+    <table cellpadding=0 cellspacing=0 align=center width=228px>
+    <tr>
+    <td valign=top style="background-image: url('/images/e1.png');background-position: left top;" width=228px height=25px colspan=3>
+</td>
+</tr>
+<tr>
+    <td width=30px style="background-image: url('/images/e2.png');background-position: left top; background-repeat: repeat-y;">
+</td>
+<td style="background-image: url('/images/e3.png');background-position: center top; background-repeat: repeat-y;"><div style='text-align:center;'><p style='margin-bottom:6;padding-top:6px;'><a href=/xml/politics/map.php style='text-decoration:underline;font-weight:bold;font-size:14px;'>Геополитика</a><p></p><script>
+
+    function onCountdownTimer()
+    {
+        if (!document.getElementById && !document.all)
+            return;
+        var hours = glCountdownHours;
+        var minutes = glCountdownMinutes;
+        var seconds = glCountdownSeconds;
+
+        if (--seconds<0)
+        {
+            seconds=59;
+            if (--minutes<0)
+            {
+                minutes=59;
+                --hours;
+            }
+        }
+
+        glCountdownHours=hours;
+        glCountdownMinutes=minutes;
+        glCountdownSeconds=seconds;
+
+
+
+        if(document.getElementById('countdown') && seconds >= 0 && hours >= 0 && minutes >=0 )
+        {
+            if (hours <= 9) hours = "0" + hours;
+            if (minutes <= 9) minutes = "0" + minutes;
+            if (seconds <= 9) seconds = "0" + seconds;
+
+            dispTime = hours + ":" + minutes + ":" + seconds;
+            document.getElementById('countdown').innerHTML=dispTime;
+            setTimeout("onCountdownTimer()", 1000);
+        }
+        else
+        {
+            document.getElementById('arrival').innerHTML="Вы прибыли в город";
+            window.location.reload();
+        }
+
+
+    }
+
+</script>
+    <script>
+        glCountdownHours=01;
+        glCountdownMinutes=12;
+        glCountdownSeconds=18;
+        setTimeout("onCountdownTimer()", 1000);
+    </script>
+
+    <span style='line-height:1.6;padding-bottom:20px;'><span id=arrival>Вы перемещаетесь в город <a href=/xml/politics/map.php?act=city&id=109>Эмерита Августа</a> (Лузитания) <span id='countdown' style='font-weight:bold;font-size:8pt;'>01:12:18</span> <br><a href=/xml/politics/map.php?act=bonus_go&id=109 onclick="return confirm('Купив колесницу за 1 бонус вы мгновенно перенесетесь в пункт назначения')" title='Купив колесницу за 1 бонус вы мгновенно перенесетесь в пункт назначения'>[ купить колесницу за 1 бонус ]</a></span></span></div><p></td><td width=30px style="background-image: url('/images/e4.png');background-position: right top; background-repeat: repeat-y;"></td>
+</tr><tr>
+<td valign=top style="background-image: url('/images/e5.png');background-position: left bottom;" width=228px height=31px colspan=3></td></tr>
+        </table><p><table width=100% cellspacing=0 cellpadding=0 border=0><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=14&act=select">Праздничные турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=2&act=select">Турниры новичков</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=1&act=select">Плебейские турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=9&act=select"><u>Императорские турниры</u></a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=3&act=select"><img src="/images/icons/senat.gif" border="0" align="absmiddle">&nbsp;&nbsp;Сенаторские турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=13&act=select">Смешанные турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=4&act=select">Внутригильдийные турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=5&act=select">Коммерческие турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=7&act=select">Призовые турниры</a></td></tr><tr class=wooden><td class=wooden><a href="/xml/arena/challenges.php">Межгильдийные турниры</a></td></tr><tr class=wooden><td class=wooden><a href="tournaments.php?typeid=26&act=select">Стеллариум турниры</a></td></tr></table><table cellpadding=0 cellspacing=0 align=center width=228px>
+<tr>
+<td valign=top style="background-image: url('/images/e1.png');background-position: left top;" width=228px height=25px colspan=3>
+</td>
+        </tr>
+<tr>
+<td width=30px style="background-image: url('/images/e2.png');background-position: left top; background-repeat: repeat-y;">
+</td>
+<td style="background-image: url('/images/e3.png');background-position: center top; background-repeat: repeat-y;"><center><p style='padding-bottom:0px;padding-top:5px;'><h3>Акции и конкурсы</h3></p><b><p style="line-height:18px;"><a href=/xml/main/competition.php?id=208&cat_id=1&act=select>Скидка 25% на сумму покупок!</b></a><br><p>до 30.06.16<p style="padding-bottom:0px;"></p></td><td width=30px style="background-image: url('/images/e4.png');background-position: right top; background-repeat: repeat-y;"></td>
+        </tr><tr>
+<td valign=top style="background-image: url('/images/e5.png');background-position: left bottom;" width=228px height=31px colspan=3></td></tr>
+        </table><table cellpadding=0 cellspacing=0 align=center width=228px>
+<tr>
+<td valign=top style="background-image: url('/images/e1.png');background-position: left top;" width=228px height=25px colspan=3>
+</td>
+        </tr>
+<tr>
+<td width=30px style="background-image: url('/images/e2.png');background-position: left top; background-repeat: repeat-y;">
+</td>
+<td style="background-image: url('/images/e3.png');background-position: center top; background-repeat: repeat-y;"><span style='text-align:center;'><p style='margin-bottom:6;padding-top:6px;'><a href=/xml/bonus/box.php style='text-decoration:underline;font-weight:bold;font-size:14px;'>Субсидиариум</a><p></p><span style='line-height:1.6;padding-bottom:20px;'><img src=/images/icons/box/chest.png align=left>Император готов предоставить вам субсидию!<p><a href=/xml/bonus/box.php>[подробнее]</a></span></span></td><td width=30px style="background-image: url('/images/e4.png');background-position: right top; background-repeat: repeat-y;"></td>
+        </tr><tr>
+<td valign=top style="background-image: url('/images/e5.png');background-position: left bottom;" width=228px height=31px colspan=3></td></tr>
+        </table><p>		</div>
+        <!-- /right panel -->
+<center><img src="/images/pattern/pattern_3.gif" style="margin-top: 22px;"></center>
+        </td>
+        </table>
+<div class='clearer'></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- /content -->
+
+        <!-- footer -->
+<div id='footer'>
+<div class='column-bottom'></div>
+<div class='caesar'></div>
+<div class='shield'></div>
+<div class='content'>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" valign=top>
+        <tr>
+
+
+            <!--begin of Rambler's Top100 code -->
+            <a href="http://top100.rambler.ru/top100/">
+                <img src="http://counter.rambler.ru/top100.cnt?707106" alt="" width=1 height=1 style='visibility:hidden'></a>
+            <!--end of Top100 code-->
+
+            <!-- begin GOOGLE ANALYTICS -->
+            <script type="text/javascript">
+                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+                try {
+                    var pageTracker = _gat._getTracker("UA-9887998-3");
+                    pageTracker._trackPageview();
+                } catch(err) {}</script>
+            <!-- end GOOGLE ANALYTICS -->
+        </td>
+
+        <td width="200px">
+
+            <a href=http://www.s2.gladiators.ru>"Гладиаторы"</a>
+        ©                   2006-2016<br/>
+        <nobr>&nbsp;&nbsp;Все права защищены.</nobr>
+    </td><td width=150px><div style='margin-bottom:6;margin-top:10;'><a href='http://forum.gladiators.ru' style='text-decoration:underline' target='_blank'><img src=/images/icons/forum.gif border=0 align=absmiddle style='margin-right:5px' title='Форум'></a><a href='http://vkontakte.ru/club11558942' style='text-decoration:underline' target=_blank><img src=/images/icons/V.gif border=0 align=absmiddle style='margin-right:5px' title='Наша группа'></a><a href='http://www.youtube.com/rugladiators' style='text-decoration:underline' target='_blank'><img src=/images/icons/youtube.jpg border=0 align=absmiddle style='margin-right:5px' title='YouTube'></a></div></td><td width=150px ><a href=http://www.s2.gladiators.ru/xml/residence/mail.php?act=support>
+
+
+<img src="/images/icon-mail-dark.gif" border="0" align=left style='margin-right:10px'></a>
+
+<a href="http://s2.gladiators.ru/xml/residence/tickets.php">Задать вопрос<br>службе поддержки</b></a>
+
+
+</td>
+<td  style='padding-right:5px;
+' width=88px>
+        </td>
+
+<td width=88px  style='padding-right:5px;'>
+
+        <!--begin of Top100 logo-->
+<a href="http://top100.rambler.ru/top100/">
+<img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-black2.gif" style="filter:alpha(Opacity=50)" alt="Rambler's Top100" width=88 height=31 ></a>
+        <!--end of Top100 logo -->
+
+        </td>
+<td width=100px   >
+
+        <!--Rating@Mail.ru COUNTEr--><a target=_top
+                                        href="http://top.mail.ru/jump?from=1157417"><img
+        src="http://d9.ca.b1.a1.top.list.ru/counter?id=1157417;t=84"
+        style="filter:alpha(Opacity=50)"
+        border=0 height=18 width=88
+alt="Рейтинг@Mail.ru"/></a><!--/COUNTER-->
+<br>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write('<a href="http://www.liveinternet.ru/click" '+
+        'target=_blank><img src="http://counter.yadro.ru/hit?t25.6;r'+
+        escape(document.referrer)+((typeof(screen)=='undefined')?'':
+        ';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
+        screen.colorDepth:screen.pixelDepth))+';u'+escape(document.URL)+
+        ';'+Math.random()+
+        '" alt="" title="LiveInternet: показано число посетителей за сегодн\я" '+
+        'border=0 style=filter:alpha(Opacity=50) width=88 height=15><\/a>')//--></script><!--/LiveInternet-->
+
+
+</td>
+        </tr>
+        </table>
+
+
+
+
+        </div>
+        </div>
+        <!-- /footer -->
+
+        </div></div>
+        </body>
+
+        </html>
+
+<script>
+if(document.getElementById("chatContent")) document.getElementById("chatContent").scrollTop=1000000;
+</script>
+<script type="text/javascript" src="/js/layout.js"></script>
+        <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter32939354 = new Ya.Metrika({
+                id:32939354,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32939354" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+

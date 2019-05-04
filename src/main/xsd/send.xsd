@@ -1,0 +1,37 @@
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace=""
+    elementFormDefault="qualified">
+    <xs:element name="xml" type="xmlType"/>
+	<xs:complexType name="xmlType">
+        <xs:sequence>
+            <xs:element name="gl" type="glType" maxOccurs="unbounded"/>
+        </xs:sequence>
+		<xs:attribute name="Champ" type="xs:long" use="required"/>
+		<xs:attribute name="id" type="xs:long" use="required"/>
+		<xs:attribute name="AwardFee" type="xs:long" use="required"/>
+    </xs:complexType>
+<!-- 	<gl>
+		<ID>97310</ID>
+		<Attack>30</Attack>
+		<Block>71</Block>
+		<Power>71</Power>
+		<Courage>50</Courage>
+		<x>1</x>
+		<y>1</y>
+		<ArmorID>2016021</ArmorID>
+	</gl>
+ -->
+    <xs:complexType name="glType">
+        <xs:sequence>
+	        <xs:element name="ID" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Attack" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Block" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Power" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="Courage" type="xs:string" minOccurs="1" maxOccurs="1" default="50"/>
+	        <xs:element name="x" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="y" type="xs:long" minOccurs="1" maxOccurs="1"/>
+	        <xs:element name="ArmorID" type="xs:string" minOccurs="1" maxOccurs="1" default=""/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
